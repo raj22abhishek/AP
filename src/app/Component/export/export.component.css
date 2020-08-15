@@ -1,0 +1,28 @@
+.monospace {
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 190%;
+    text-align: justify;
+  }
+
+  .monospace1 {
+    font-family: Impact, Charcoal, sans-serif;
+    text-align: justify;
+    font-size: 140%;
+  }
+
+  /* font-family: "Lucida Console", Courier, monospace; */
+
+  .topSection {
+    background-color: rgb(103, 58, 183);
+    color: rgba(255, 255, 255, 1);
+    height: 287px;
+  }
+  
+  .card {
+    margin-top: -65px;
+    border-top: 10px solid rgb(174, 121, 255);
+  }
+  
+  .helper-text {
+    color: red;
+  }

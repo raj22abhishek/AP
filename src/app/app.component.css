@@ -1,0 +1,38 @@
+
+  
+  
+  /* li a{
+    box-shadow: 1px 1px 1px 1px;
+    color:white;
+    margin-left: 30px;
+    background-color: #ff9b00;
+    border-radius: 2px;
+  } */
+
+  li a:hover{
+    color: white;
+    background-color: #ff9b00;
+    
+  }
+  /* li a:active{
+    box-shadow: 3px 3px 3px 3px;
+    color: black;
+    transition: all 0.5s linear;
+  } */
+  
+  .enqButton{
+    box-shadow: 1px 1px 1px 1px;
+    color:white;
+    background-color: #ff9b00;
+  }
+
+  .enqButton:hover{
+    box-shadow: 2px 2px 2px 2px;
+    color: #25274d;
+    background-color: whitesmoke;
+  }
+
+
+  p {
+    font-family: Lato;
+  }

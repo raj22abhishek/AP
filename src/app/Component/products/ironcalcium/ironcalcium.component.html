@@ -1,0 +1,39 @@
+<div class="container-fluid">
+    <div class="row mt-4 mb-4"
+    style="background-color: #ff9b00;min-height: 100px;color: white;display: block;">
+        <h1 style="text-align: center;font-size: 50px;padding: 17px;">ANTIHISTAMINE</h1>
+    </div>
+</div>
+
+<div class="container">
+        
+    <div class="row">
+        <div *ngFor="let data of dispArr">
+            <!-- <div class="card m-4" style="width: 18rem;height: 22rem;">
+                <figure class="rounded p-2 bg-white shadow-lg">
+                  <div class="hover hover-1 text-white rounded"><img [src]="data.imgUrl" alt="" style="height: 260px;" class="w-100 card-img-top"></div>
+                  <figcaption class="p-4 card-img-bottom">
+                    <h2 class="h5 font-weight-bold mb-2 font-italic">{{data.name}}</h2>
+                    <p class="mb-0 text-small text-muted font-italic">{{data.desc}}</p>
+                  </figcaption>
+                </figure>
+            </div> -->
+            <mat-card class="example-card m-4">
+                <mat-card-header>
+                  <mat-card-title>{{data.name}}</mat-card-title>
+                  <mat-card-subtitle>Antihistamine</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image [src]="data.imgUrl" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                  <p>
+                    {{data.desc}}
+                  </p>
+                </mat-card-content>
+                <mat-card-actions>
+                  <button class="btn" style="background-color: #ff9b00;" (click)="openDialog(data)">More Info</button>
+                </mat-card-actions>
+              </mat-card>
+        </div>
+          
+    </div>
+    </div>

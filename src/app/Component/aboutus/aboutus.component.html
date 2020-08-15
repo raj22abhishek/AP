@@ -1,0 +1,177 @@
+<div class="container-fluid">
+    <div class="row mt-4 mb-4"
+    style="background-color: #ff9b00;min-height: 100px;color: white;display: block;">
+        <h1 style="text-align: center;font-size: 50px;padding: 20px;">CONTACT US</h1>
+    </div>
+</div>
+
+<!-- <div class="bg-white py-5">
+      <div class="row m-4">
+       <div class="col-md-5">
+        <div>
+            <h4 style="color: #25274d;"><b>COMPANY DETAILS</b></h4>
+        </div>
+
+        <br>
+        <div>
+            <h4 style="color: #25274d;"><b>AMAR PHARMACEUTICALS</b></h4>
+        </div>
+        <br>
+        <div>
+            <h4 style="color: #25274d;"><b><i class="fa fa-map-marker" aria-hidden="true"></i>  HEAD QUARTER</b></h4>
+        </div>
+        <div><span>F-461, Krishna Gali, Kotla Mubarakpur New Delhi.<br>
+                Pin Code – 110003 India</span>
+        </div>
+        <br>
+        <div>
+            <span><h5 style="color: #25274d;">  <i class="fa fa-phone" aria-hidden="true"></i>  Phone Number : </h5></span> <span>+91 8860747844</span>
+        </div>
+        <br>
+        <div>
+            <span><h5 style="color: #25274d;"><i class="fa fa-envelope" aria-hidden="true"></i>   E-Mail : </h5></span> <span>info@fabtekinternational.com</span>
+        </div>
+        <br>
+        <div>
+            <span><h5><i class="fa fa-globe" aria-hidden="true"></i> Website : </h5></span> <span>www.amarpharmacueticals.com</span>
+        </div>
+
+       </div>
+        <div class="col-md-5 body">
+            <div class="contact-form m-3">
+                <div class="form-group">
+                  <label class="control-label col-sm-2" style="color: white;" for="fname">Name:</label>
+                  <div class="col-sm-10">          
+                    <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-2 b-white" style="color: white;" for="lname">Mobile:</label>
+                  <div class="col-sm-10">          
+                    <input type="text" class="form-control" id="lname" placeholder="Enter Mobile" name="lname">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-2 b-white" style="color: white;" for="email">Email:</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-2 b-white" style="color: white;" for="comment">Message:</label>
+                  <div class="col-sm-10">
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                  </div>
+                </div>
+                <div class="form-group">        
+                  <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn" style="background: #25274d ;">Send</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+        
+      </div>
+  </div> -->
+  
+ 
+
+  <div class="container contact mt-5 mb-5">
+	<div class="row">
+		<div class="col-md-3 border1">
+			<div class="contact-info">
+				<img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
+				<h2>Contact Us</h2>
+				<h4>We would love to hear from you !</h4>
+			</div>
+		</div>
+		<div class="col-md-6 body">
+			<form [formGroup]="ourForm">
+        <div class="contact-form m-3">
+          <div class="form-group">
+            <label class="control-label col-sm-2" style="color: white;" for="fname">Name:</label>
+            <div class="col-sm-10">          
+              <input type="text" class="form-control" id="fname" formControlName="name" placeholder="Enter First Name" name="fname">
+              <div *ngIf="ourForm.get('name').touched && ourForm.get('name').errors?.required">
+                <span class="bg-white">The fullName is required</span>
+                </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2 b-white" style="color: white;" for="lname">Mobile:</label>
+            <div class="col-sm-10">          
+              <input type="text" class="form-control" id="lname" formControlName="mobile" placeholder="Enter Mobile" name="lname">
+              <div *ngIf="ourForm.get('mobile').touched && ourForm.get('mobile').errors?.required">
+                <span class="bg-white">The Number is required</span>
+                </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2 b-white" style="color: white;" for="email">Email:</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" formControlName="email" id="email" placeholder="Enter email" name="email">
+              <div *ngIf="ourForm.get('email').touched && ourForm.get('email').errors?.required">
+                <span class="bg-white">The email is required</span>
+                </div>
+                <div *ngIf="ourForm.get('email').touched && ourForm.get('email').errors?.email">
+                <span class="bg-white">The email is invalid</span>
+                </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2 b-white" style="color: white;" for="comment">Comment:</label>
+            <div class="col-sm-10">
+              <textarea class="form-control" formControlName="comment" rows="5" id="comment"></textarea>
+              <div *ngIf="ourForm.get('comment').touched && ourForm.get('comment').errors?.required">
+                <span class="bg-white">The Query is required</span>
+                </div>
+            </div>
+          </div>
+          <div class="form-group">        
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" [disabled]="ourForm.invalid" class="btn" style="background: #ff9b00 ;" (click)="submitData(ourForm.value)">Submit</button>
+            </div>
+          </div>
+        </div>
+      </form>
+        </div>
+        <div class="col-md-3 border2 text-center">
+            <div>
+                <h5 style="color: #25274d;"><b>COMPANY DETAILS</b></h5>
+            </div>
+    
+            <br>
+            <div>
+                <h5 style="color: #25274d;"><b>AMAR PHARMACEUTICALS</b></h5>
+            </div>
+            <br>
+            <div>
+                <h5 style="color: #25274d;"><b><i class="fa fa-map-marker" aria-hidden="true"></i>  HEAD QUARTER</b></h5>
+            </div>
+            <div><span>F-461, Krishna Gali, Kotla Mubarakpur New Delhi.<br>
+                    Pin Code – 110003 India</span>
+            </div>
+            <br>
+            <div>
+                <span><h5 style="color: #25274d;">  <i class="fa fa-phone" aria-hidden="true"></i>  Phone Number : </h5></span> <span>+91 8860747844</span>
+            </div>
+            <br>
+            <div>
+                <span><h5 style="color: #25274d;"><i class="fa fa-envelope" aria-hidden="true"></i>   E-Mail : </h5></span> <span>info@fabtekinternational.com</span>
+            </div>
+            <br>
+            <div>
+                <span><h5><i class="fa fa-globe" aria-hidden="true"></i> Website : </h5></span> <span>www.amarpharmacueticals.com</span>
+            </div>
+    
+        </div>
+        
+	</div>
+</div>
+
+
+
+
+
+
+

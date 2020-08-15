@@ -1,0 +1,32 @@
+body {
+    background: #ff5f6d;
+    background: -webkit-linear-gradient(to right,rgb(240, 163, 90),#ff9b00);
+    background: linear-gradient(to right, rgb(240, 163, 90),#ff9b00);
+    height: 200px;
+  }
+
+  .white{
+    background: #fd9737;
+    background: -webkit-linear-gradient(to right,rgb(240, 163, 90),#ff9b00);
+    background: linear-gradient(to right, rgb(240, 163, 90),#ff9b00);
+  }
+  
+  #button-addon1 {
+    color: #ffc371;
+  }
+  
+  i {
+    color: #ffc371;
+  }
+  
+  .form-control::placeholder {
+    font-size: 0.95rem;
+    color: rgb(170, 170, 170);
+    font-style: italic;
+  }
+  
+  .form-control.shadow-0:focus {
+    box-shadow: none;
+  }
+
+  

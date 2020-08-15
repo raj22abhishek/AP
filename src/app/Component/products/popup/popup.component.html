@@ -1,0 +1,33 @@
+<mat-dialog-content class="mat-typography">
+  <div class="container" style="background-color: #25274d; color: white;padding-top: 8px;">
+    <div class="row m-2">
+      <h3><b>{{data.Array.desc}} {{abc}}</b></h3>
+    </div>
+    
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <img [src]="data.Array.imgUrl" style="width:250px;height:250px">
+      </div>
+      <div class="col-md-6" style="padding-left: 100px;">
+        <div><h2><b>{{data.Array.name}}</b></h2></div>
+        <div>
+          <h2><b>Composition :</b></h2>{{data.Array.composition}}
+        </div>
+        <div>
+          <h2><b>Packing :</b></h2>{{data.Array.packing}}
+        </div>
+        <div>
+          <h2><b>Dosage :</b></h2>{{data.Array.dose}}
+        </div>
+      
+      </div>
+    </div>
+  </div>
+  
+  
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button class="btn" style="background-color: #ff9b00;" mat-dialog-close>OK</button>
+</mat-dialog-actions>
