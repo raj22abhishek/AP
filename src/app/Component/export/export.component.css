@@ -1,13 +1,11 @@
 .monospace {
-    font-family: Impact, Charcoal, sans-serif;
-    font-size: 190%;
+    font-size: 140%;
     text-align: justify;
   }
 
   .monospace1 {
-    font-family: Impact, Charcoal, sans-serif;
     text-align: justify;
-    font-size: 140%;
+    font-size: 120%;
   }
 
   /* font-family: "Lucida Console", Courier, monospace; */

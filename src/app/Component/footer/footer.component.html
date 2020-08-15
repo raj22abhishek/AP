@@ -21,7 +21,7 @@
       <div class="container py-5">
         <div class="row py-4">
           <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><img src="img/logo.png" alt="" width="180" class="mb-3">
-            <p class="font-italic text-muted">Amar Pharmacueticals</p>
+            <p class="font-italic text-muted">Salt Pharmacueticals</p>
             <ul class="list-inline mt-4">
               <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a></li>
               <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a></li>
@@ -31,30 +31,32 @@
             </ul>
           </div>
           <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-            <h5 class="text-uppercase font-weight-bold mb-4">Products</h5>
+            <h3 class="text-uppercase font-weight-bold mb-4" style="color: white;">Products</h3>
             <ul class="list-unstyled mb-0">
-              <li class="mb-2"><a href="antibiotics" class="text-muted">Antibiotics</a></li>
-              <li class="mb-2"><a href="antihistamine" class="text-muted">Antihistamine</a></li>
-              <li class="mb-2"><a href="antifungal" class="text-muted">Antifungal</a></li>
-              <li class="mb-2"><a href="antimalarial" class="text-muted">Antimalarial</a></li>
-              <li class="mb-2"><a href="iron-calcium" class="text-muted">Iron-Calcium</a></li>
-              <li class="mb-2"><a href="multi-vitamins" class="text-muted">Multi-Vitamins</a></li>
+              <li class="mb-2"><a style="color: #25274d;" (click)="antibiotics()" >Antibiotics</a></li>
+              <li class="mb-2"><a style="color: #25274d;" (click)="antihistamine()">Antihistamine</a></li>
+              <li class="mb-2"><a style="color: #25274d;" (click)="antifungal()">Antifungal</a></li>
+              <li class="mb-2"><a style="color: #25274d;" (click)="antimalarial()">Antimalarial</a></li>
+              <li class="mb-2"><a style="color: #25274d;" (click)="ironCal()">Iron-Calcium</a></li>
+              <li class="mb-2"><a style="color: #25274d;" (click)="multiVit()">Multi-Vitamins</a></li>
             </ul>
           </div>
           <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-            <h5 class="text-uppercase font-weight-bold mb-4">Company</h5>
+            <h3 class="text-uppercase font-weight-bold mb-4" style="color: white;">Company</h3>
             <ul class="list-unstyled mb-0">
-              <li class="mb-2"><a (click)="contact()" class="text-muted">Contact us</a></li>
-              <li class="mb-2"><a (click)="product()" class="text-muted">We Offer</a></li>
-              <li class="mb-2"><a (click)="about()" class="text-muted">About Us</a></li>
-              <li class="mb-2"><a (click)="export()" class="text-muted">Export</a></li>
+              <li class="mb-2"><a (click)="contact()" style="color: #25274d;">Contact us</a></li>
+              <li class="mb-2"><a (click)="product()" style="color: #25274d;">We Offer</a></li>
+              <li class="mb-2"><a (click)="about()" style="color: #25274d;">About Us</a></li>
+              <li class="mb-2"><a (click)="export()" style="color: #25274d;">Export</a></li>
             </ul>
           </div>
           <div class="col-lg-4 col-md-6 mb-lg-0">
             <div class="border2 text-center">
               <ul class="list-unstyled mb-0">
                   <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                      <p>San Francisco, CA 94126, USA</p>
+                    <div><span>F-461, Krishna Gali, Kotla Mubarakpur New Delhi.<br>
+                      Pin Code – 110003 India</span>
+                    </div>
                   </li>
   
                   <li><i class="fas fa-phone mt-4 fa-2x"></i>
@@ -62,7 +64,7 @@
                   </li>
   
                   <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                      <p>contact@mdbootstrap.com</p>
+                      <p>info@fabtekinternational.com</p>
                   </li>
               </ul>
           </div>

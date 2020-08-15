@@ -24,5 +24,23 @@ export class FooterComponent implements OnInit {
   product(){
     this.router.navigate(['/product'])
   }
+  antibiotics(){
+    this.router.navigate(['/antibiotics'])
+  }
+  antihistamine(){
+    this.router.navigate(['/antihistamine'])
+  }
+  antifungal(){
+    this.router.navigate(['/antifungal'])
+  }
+  antimalarial(){
+    this.router.navigate(['/antimalarial'])
+  }
+  ironCal(){
+    this.router.navigate(['/iron-calcium'])
+  }
+  multiVit(){
+    this.router.navigate(['/multi-vitamins'])
+  }
 
 }

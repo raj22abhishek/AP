@@ -29,4 +29,8 @@ body {
     box-shadow: none;
   }
 
+  li a:hover{
+    background-color: white;
+    cursor: pointer;
+  }
   

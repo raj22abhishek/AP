@@ -17,3 +17,8 @@
     text-decoration: none;
     color: #555;
   }
+
+  .monospace1 {
+    text-align: justify;
+    font-size: 130%;
+  }

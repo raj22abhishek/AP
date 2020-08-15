@@ -24,7 +24,7 @@ const routes: Routes = [
   {path:"product",component:ProductsComponent},
   {path:"aboutus",component:AboutusmainComponent},
   {path:"antibiotics",component:AntibioticsComponent},
-  {path:"antibiotics",component:AntihistamineComponent},
+  {path:"antihistamine",component:AntihistamineComponent},
   {path:"antifungal",component:AntifungalComponent},
   {path:"antimalarial",component:AntimalarialComponent},
   {path:"iron-calcium",component:IroncalciumComponent},
