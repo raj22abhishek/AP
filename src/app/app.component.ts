@@ -34,4 +34,16 @@ export class AppComponent {
   openExportTab(){
     this.router.navigate(['/product'])
   }
+  about(){
+    this.router.navigate(['/aboutus'])
+  }
+  export(){
+    this.router.navigate(['/export'])
+  }
+  contact(){
+    this.router.navigate(['/contact'])
+  }
+  home(){
+    this.router.navigate(['/home'])
+  }
 }
