@@ -28,6 +28,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatDialogModule} from '@angular/material/dialog';
 import { ProductList } from './data/data';
 import { environment } from 'src/environments/environment';
+import { CollapseCompComponent } from './Component/collapse-comp/collapse-comp.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { environment } from 'src/environments/environment';
     AntimalarialComponent,
     IroncalciumComponent,
     MultivitaminsComponent,
-    PopupComponent
+    PopupComponent,
+    CollapseCompComponent
   ],
   imports: [
     BrowserModule,
