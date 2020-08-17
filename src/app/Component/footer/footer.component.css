@@ -33,4 +33,12 @@ body {
     background-color: white;
     cursor: pointer;
   }
-  
+
+.custom-scrollbar-js,
+.custom-scrollbar-css {
+  height: 400px;
+}
+
+div a:hover{
+  cursor: pointer;
+}

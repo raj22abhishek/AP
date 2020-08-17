@@ -29,6 +29,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { ProductList } from './data/data';
 import { environment } from 'src/environments/environment';
 import { CollapseCompComponent } from './Component/collapse-comp/collapse-comp.component';
+import { DeveloperNameComponent } from './Component/developer-name/developer-name.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { CollapseCompComponent } from './Component/collapse-comp/collapse-comp.c
     IroncalciumComponent,
     MultivitaminsComponent,
     PopupComponent,
-    CollapseCompComponent
+    CollapseCompComponent,
+    DeveloperNameComponent
   ],
   imports: [
     BrowserModule,

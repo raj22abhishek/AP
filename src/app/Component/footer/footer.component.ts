@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { MatDialog } from '@angular/material/dialog';
+import { DeveloperNameComponent } from '../developer-name/developer-name.component';
 
 @Component({
   selector: 'app-footer',
@@ -8,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class FooterComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private router:Router,public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
@@ -41,6 +43,18 @@ export class FooterComponent implements OnInit {
   }
   multiVit(){
     this.router.navigate(['/multi-vitamins'])
+  }
+
+  dev(){
+    const dialogRef = this.dialog.open(DeveloperNameComponent,{
+      data: {
+        Array: ""
+      }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
 
 }
