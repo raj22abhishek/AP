@@ -20,13 +20,12 @@ export class AboutusComponent implements OnInit {
     this.ourForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      mobile: ['', Validators.required],
+      mobile: ['', [Validators.required]],
       comment: ['', Validators.required],
     });
   }
   submitData(value: any) {
-    console.log(this.submitted,value);
-    this.router.navigate(['/contact'])
+    console.log(this.ourForm,value);
     this.submitting = true;
     this.submissionForm.add(value).then(res => {
       this.submitted = true;
@@ -34,6 +33,8 @@ export class AboutusComponent implements OnInit {
     ).finally(() => {
       this.submitting = false;
     });
+    alert("Form Submitted Successfully")
+    this.ourForm.reset()
     
   }
 
