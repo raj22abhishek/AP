@@ -12,6 +12,7 @@
   li a:hover{
     color: white;
     background-color: #ff9b00;
+    cursor: pointer;
     
   }
   /* li a:active{

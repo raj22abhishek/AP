@@ -42,3 +42,10 @@ body {
 div a:hover{
   cursor: pointer;
 }
+
+.abcd:hover{
+  color: #fd9737;
+}
+.abcd{
+  color: grey;
+}
