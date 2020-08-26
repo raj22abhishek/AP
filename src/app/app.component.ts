@@ -48,7 +48,7 @@ export class AppComponent {
     this.router.navigate(['/contact'])
   }
   home(){
-    this.router.navigate(['/home'])
+    this.router.navigate(['/'])
   }
   open(){
     const dialogRef = this.dialog.open(CollapseCompComponent,{

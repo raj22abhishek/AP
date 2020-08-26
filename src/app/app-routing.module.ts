@@ -16,8 +16,7 @@ import { MultivitaminsComponent } from './Component/products/multivitamins/multi
 
 
 const routes: Routes = [
-  {path:"home",component:HomeComponent},
-  {path:'', redirectTo:'/home', pathMatch:'full'},
+  {path:"",component:HomeComponent},
   {path:"enquiry",component:ContactComponent},
   {path:"contact",component:AboutusComponent},
   {path:"export",component:ExportComponent},
