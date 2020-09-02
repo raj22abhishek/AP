@@ -47,6 +47,27 @@ export class AppComponent {
   contact(){
     this.router.navigate(['/contact'])
   }
+  antibacterial(){
+    this.router.navigate(['/antibacterial'])
+  }
+  analgesic (){
+    this.router.navigate(['/analgesic'])
+  }
+  antiemetic(){
+    this.router.navigate(['/antiemetic'])
+  }
+  antiviral(){
+    this.router.navigate(['/antiviral'])
+  }
+  diabetes(){
+    this.router.navigate(['/diabetes'])
+  }
+  certificate(){
+    this.router.navigate(['/certificate'])
+  }
+  career(){
+    this.router.navigate(['/career'])
+  }
   home(){
     this.router.navigate(['/'])
   }

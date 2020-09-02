@@ -4,7 +4,12 @@
 }
 
 li a:hover{
+    color: white;
     cursor: pointer;
     background-color: #ff9b00;
-    color: white;
+    
+}
+
+li a{
+  color: rgb(143, 141, 141);
 }

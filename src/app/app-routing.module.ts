@@ -13,6 +13,13 @@ import { AntifungalComponent } from './Component/products/antifungal/antifungal.
 import { AntimalarialComponent } from './Component/products/antimalarial/antimalarial.component';
 import { IroncalciumComponent } from './Component/products/ironcalcium/ironcalcium.component';
 import { MultivitaminsComponent } from './Component/products/multivitamins/multivitamins.component';
+import { CareerComponent } from './Component/career/career.component';
+import { CertificateComponent } from './Component/certificate/certificate.component';
+import { AntibacterialComponent } from './Component/products/antibacterial/antibacterial.component';
+import { AnalgesicComponent } from './Component/products/analgesic/analgesic.component';
+import { AntiemeticComponent } from './Component/products/antiemetic/antiemetic.component';
+import { AntiviralComponent } from './Component/products/antiviral/antiviral.component';
+import { DiabetesComponent } from './Component/products/diabetes/diabetes.component';
 
 
 const routes: Routes = [
@@ -26,6 +33,13 @@ const routes: Routes = [
   {path:"antihistamine",component:AntihistamineComponent},
   {path:"antifungal",component:AntifungalComponent},
   {path:"antimalarial",component:AntimalarialComponent},
+  {path:"diabetes",component:DiabetesComponent},
+  {path:"antiviral",component:AntiviralComponent},
+  {path:"antiemetic",component:AntiemeticComponent},
+  {path:"analgesic",component:AnalgesicComponent},
+  {path:"antibacterial",component:AntibacterialComponent},
+  {path:"certificate",component:CertificateComponent},
+  {path:"career",component:CareerComponent},
   {path:"iron-calcium",component:IroncalciumComponent},
   {path:"multi-vitamins",component:MultivitaminsComponent},
 ];

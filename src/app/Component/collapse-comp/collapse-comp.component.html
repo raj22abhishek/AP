@@ -1,37 +1,48 @@
 <div class="container">
     <div class="row">
-        <ul class="navbar-nav ml-auto">
-            <li>
-              <a class="nav-link mx-3" (click)="home()">HOME</a>
-            </li> 
-            <li class="nav-item"> 
-              <!-- <a class="nav-link mx-3" href="home" >HOME</a> -->
-              <!-- <button mat-menu-item mat-button [matMenuTriggerFor]="animals">PRODUCT v</button> -->
-              <a class="nav-link mx-3" mat-button [matMenuTriggerFor]="animals">PRODUCT v</a>
-              
-              <mat-menu #animals="matMenu">
-                <button mat-menu-item [matMenuTriggerFor]="vertebrates">DOMESTIC PRODUCTS</button>
-                <button mat-menu-item (click)="openExportTab()">EXPORT PRODUCTS</button>
-              </mat-menu>
-              <mat-menu #vertebrates="matMenu">
-                <button mat-menu-item (click)="openAntiBiotics()">Antibiotics</button>
-                <button mat-menu-item (click)="openAntihistamine()">Antihistamine</button>
-                <button mat-menu-item (click)="openAntifungal()">AntiFungal</button>
-                <button mat-menu-item (click)="openAntimalarial()">AntiMalarial</button>
-                <button mat-menu-item (click)="openIronValcium()">Iron Calcium</button>
-                <button mat-menu-item (click)="openMultiVitamins()">Multi Vitamins</button>
-              </mat-menu>
-              
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-3" (click)="about()">ABOUT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-3" (click)="export()">EXPORT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-3" (click)="contact()">CONTACT US</a>
-            </li>
-          </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link mx-3" (click)="home()">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-3" (click)="about()">ABOUT</a>
+        </li>
+        <li class="nav-item"> 
+          <!-- <a class="nav-link mx-3" href="home" >HOME</a> -->
+          <!-- <button mat-menu-item mat-button [matMenuTriggerFor]="animals">PRODUCT v</button> -->
+          <a class="nav-link mx-3" mat-button [matMenuTriggerFor]="animals">PRODUCTS <i class="fas fa-caret-square-down"></i></a>
+          
+          <mat-menu #animals="matMenu">
+            <button mat-menu-item [matMenuTriggerFor]="vertebrates">DOMESTIC PRODUCTS</button>
+            <button mat-menu-item (click)="openExportTab()">EXPORT PRODUCTS</button>
+          </mat-menu>
+          <mat-menu #vertebrates="matMenu">
+            <button mat-menu-item (click)="openAntiBiotics()">Antibiotics</button>
+            <button mat-menu-item (click)="openAntihistamine()">Antihistamine</button>
+            <button mat-menu-item (click)="openAntifungal()">AntiFungal</button>
+            <button mat-menu-item (click)="openAntimalarial()">AntiMalarial</button>
+            <button mat-menu-item (click)="openIronValcium()">Iron Calcium</button>
+            <button mat-menu-item (click)="openMultiVitamins()">Multi Vitamins</button>
+            <button mat-menu-item (click)="antibacterial()">Antibacterial</button>
+            <button mat-menu-item (click)="analgesic()">Analgesic</button>
+            <button mat-menu-item (click)="antiemetic()">Antiemetic</button>
+            <button mat-menu-item (click)="antiviral()">Antiviral</button>
+            <button mat-menu-item (click)="diabetes()">Diabetes</button>
+          </mat-menu>
+          
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-3" (click)="export()">EXPORT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-3" (click)="certificate()">CERTIFICATE</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link mx-3" (click)="career()">CAREER</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link mx-3" (click)="contact()">CONTACT</a>
+        </li>
+      </ul>
     </div>
 </div>

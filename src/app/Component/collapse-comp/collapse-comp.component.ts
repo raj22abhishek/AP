@@ -57,5 +57,26 @@ export class CollapseCompComponent implements OnInit {
     this.router.navigate(['/'])
     this.dialogRef.close()
   }
+  antibacterial(){
+    this.router.navigate(['/antibacterial'])
+  }
+  analgesic (){
+    this.router.navigate(['/analgesic'])
+  }
+  antiemetic(){
+    this.router.navigate(['/antiemetic'])
+  }
+  antiviral(){
+    this.router.navigate(['/antiviral'])
+  }
+  diabetes(){
+    this.router.navigate(['/diabetes'])
+  }
+  certificate(){
+    this.router.navigate(['/certificate'])
+  }
+  career(){
+    this.router.navigate(['/career'])
+  }
 
 }

@@ -100,9 +100,14 @@
           <div class="form-group">
             <label class="control-label col-sm-2 b-white" style="color: white;" for="lname">Mobile:</label>
             <div class="col-sm-10">          
-              <input type="text" class="form-control" id="lname" formControlName="mobile" placeholder="Enter Mobile" name="lname">
+              <input type="text" class="form-control" id="mob" formControlName="mobile" placeholder="Enter Mobile" name="mob">
               <div *ngIf="ourForm.get('mobile').touched && ourForm.get('mobile').errors?.required">
                 <span class="bg-white">The Number is required</span>
+                
+                </div>
+                <div *ngIf="ourForm.get('mobile').errors?.pattern">
+                  <span class="bg-white">Please add a valid mobile number</span>
+                  
                 </div>
             </div>
           </div>

@@ -20,7 +20,7 @@ export class AboutusComponent implements OnInit {
     this.ourForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      mobile: ['', [Validators.required]],
+      mobile: ['', [Validators.required,Validators.pattern('^([+]\\d{2})?\\d{10}$')]],
       comment: ['', Validators.required],
     });
   }

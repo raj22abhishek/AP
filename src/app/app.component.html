@@ -24,12 +24,17 @@
           <button mat-menu-item (click)="openExportTab()">EXPORT PRODUCTS</button>
         </mat-menu>
         <mat-menu #vertebrates="matMenu">
-          <button mat-menu-item (click)="openAntiBiotics()">Antibacterial</button>
-          <button mat-menu-item (click)="openAntihistamine()">Analgesic</button>
-          <button mat-menu-item (click)="openAntifungal()">Antiemetic</button>
-          <button mat-menu-item (click)="openAntimalarial()">Antiviral</button>
-          <button mat-menu-item (click)="openIronValcium()">Diabetes</button>
-          <!-- <button mat-menu-item (click)="openMultiVitamins()">Multi Vitamins</button> -->
+          <button mat-menu-item (click)="openAntiBiotics()">Antibiotics</button>
+          <button mat-menu-item (click)="openAntihistamine()">Antihistamine</button>
+          <button mat-menu-item (click)="openAntifungal()">AntiFungal</button>
+          <button mat-menu-item (click)="openAntimalarial()">AntiMalarial</button>
+          <button mat-menu-item (click)="openIronValcium()">Iron Calcium</button>
+          <button mat-menu-item (click)="openMultiVitamins()">Multi Vitamins</button>
+          <button mat-menu-item (click)="antibacterial()">Antibacterial</button>
+          <button mat-menu-item (click)="analgesic()">Analgesic</button>
+          <button mat-menu-item (click)="antiviral()">Antiemetic</button>
+          <button mat-menu-item (click)="antiviral()">Antiviral</button>
+          <button mat-menu-item (click)="diabetes()">Diabetes</button>
         </mat-menu>
         
       </li>
@@ -37,10 +42,10 @@
         <a class="nav-link mx-3" (click)="export()">EXPORT</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link mx-3" (click)="home()">CERTIFICATE</a>
+        <a class="nav-link mx-3" (click)="certificate()">CERTIFICATE</a>
       </li> 
       <li class="nav-item">
-        <a class="nav-link mx-3" (click)="home()">CAREER</a>
+        <a class="nav-link mx-3" (click)="career()">CAREER</a>
       </li> 
       <li class="nav-item">
         <a class="nav-link mx-3" (click)="contact()">CONTACT</a>

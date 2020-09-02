@@ -30,6 +30,14 @@ import { ProductList } from './data/data';
 import { environment } from 'src/environments/environment';
 import { CollapseCompComponent } from './Component/collapse-comp/collapse-comp.component';
 import { DeveloperNameComponent } from './Component/developer-name/developer-name.component';
+import { CareerComponent } from './Component/career/career.component';
+import { CertificateComponent } from './Component/certificate/certificate.component';
+import { AntibacterialComponent } from './Component/products/antibacterial/antibacterial.component';
+import { AnalgesicComponent } from './Component/products/analgesic/analgesic.component';
+import { AntiemeticComponent } from './Component/products/antiemetic/antiemetic.component';
+import { AntiviralComponent } from './Component/products/antiviral/antiviral.component';
+import { DiabetesComponent } from './Component/products/diabetes/diabetes.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 @NgModule({
   declarations: [
@@ -49,13 +57,21 @@ import { DeveloperNameComponent } from './Component/developer-name/developer-nam
     MultivitaminsComponent,
     PopupComponent,
     CollapseCompComponent,
-    DeveloperNameComponent
+    DeveloperNameComponent,
+    CareerComponent,
+    CertificateComponent,
+    AntibacterialComponent,
+    AnalgesicComponent,
+    AntiemeticComponent,
+    AntiviralComponent,
+    DiabetesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,MatDialogModule,ReactiveFormsModule,
     NoopAnimationsModule,MatMenuModule,MatCardModule,
-    BrowserAnimationsModule,HttpClientModule,FormsModule,AngularFireModule.initializeApp(environment.firebase),
+    BrowserAnimationsModule,HttpClientModule,FormsModule,
+    AngularFireModule.initializeApp(environment.firebase),PdfViewerModule
   ],
   providers: [ProductList],
   bootstrap: [AppComponent]
