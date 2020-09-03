@@ -26,22 +26,72 @@ export class ProductsComponent implements OnInit {
   isSelectedFourth:string = "#ff9b00";
   isSelectedFifit:string = "#ff9b00";
   isSelectedSixth:string = "#ff9b00";
+  length1:number = 0
   
   headElements = ['ID', 'First', 'Last', 'Handle'];
   constructor(private prodList:ProductList) { }
 
   ngOnInit(): void {
-    console.log(this.prodList);
-    this.list = this.prodList.exportList;
-    this.tabletList = this.prodList.exportList;
-    this.capList = this.prodList.capsuleList;
-    this.syrupList = this.prodList.syrupList;
-    this.externalOinment = this.prodList.externalOinment;
-    this.externalCosmetic = this.prodList.externalCosmetic;
-    this.externalNasalSpray = this.prodList.externalNasalSpray;
-    this.externalPowder = this.prodList.externalPowder;
-    this.sachetList = this.prodList.sachetList;
-    this.foodCapTabList = this.prodList.foodCapTabList;
+    this.list = this.prodList.exportList.sort(function(a, b){
+      if(a.name < b.name) { return -1; }
+      if(a.name > b.name) { return 1; }
+      return 0;
+
+  })
+    this.tabletList = this.prodList.exportList.sort(function(a, b){
+      if(a.name < b.name) { return -1; }
+      if(a.name > b.name) { return 1; }
+      return 0;
+
+  })
+    this.capList = this.prodList.capsuleList.sort(function(a, b){
+      if(a.name < b.name) { return -1; }
+      if(a.name > b.name) { return 1; }
+      return 0;
+
+  })
+    this.syrupList = this.prodList.syrupList.sort(function(a, b){
+      if(a.name < b.name) { return -1; }
+      if(a.name > b.name) { return 1; }
+      return 0;
+
+  })
+    this.externalOinment = this.prodList.externalOinment.sort(function(a, b){
+      if(a.name < b.name) { return -1; }
+      if(a.name > b.name) { return 1; }
+      return 0;
+
+  })
+    this.externalCosmetic = this.prodList.externalCosmetic.sort(function(a, b){
+      if(a.name < b.name) { return -1; }
+      if(a.name > b.name) { return 1; }
+      return 0;
+
+  })
+    this.externalNasalSpray = this.prodList.externalNasalSpray.sort(function(a, b){
+      if(a.name < b.name) { return -1; }
+      if(a.name > b.name) { return 1; }
+      return 0;
+
+  })
+    this.externalPowder = this.prodList.externalPowder.sort(function(a, b){
+      if(a.name < b.name) { return -1; }
+      if(a.name > b.name) { return 1; }
+      return 0;
+
+  })
+    this.sachetList = this.prodList.sachetList.sort(function(a, b){
+      if(a.name < b.name) { return -1; }
+      if(a.name > b.name) { return 1; }
+      return 0;
+
+  })
+    this.foodCapTabList = this.prodList.foodCapTabList.sort(function(a, b){
+      if(a.name < b.name) { return -1; }
+      if(a.name > b.name) { return 1; }
+      return 0;
+
+  })
     this.getData(this.list)
     
   }
@@ -59,6 +109,7 @@ export class ProductsComponent implements OnInit {
     }
     for(let j=x;j<list.length;j++){
       this.list2.push(list[j])
+      this.length1 = this.list2.length;
     }
 
     

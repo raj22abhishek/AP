@@ -75,10 +75,10 @@
           
                   <!--Table body-->
                   
-                  <tbody *ngFor="let data of list1">
+                  <tbody *ngFor="let data of list1;let i = index">
                     <tr>
                       
-                      <td>{{data.sq}}</td>
+                      <td>{{i + 1}}</td>
                       <td>{{data.name}}</td>
                     </tr>
                   </tbody>
@@ -115,10 +115,10 @@
           
                   <!--Table body-->
                   <tbody>
-                    <tbody *ngFor="let data of list2">
+                    <tbody *ngFor="let data of list2;let i = index">
                       <tr>
                         
-                        <td>{{data.sq}}</td>
+                        <td>{{length1  + i + 1 }}</td>
                         <td>{{data.name}}</td>
                       </tr>
                     
