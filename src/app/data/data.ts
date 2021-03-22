@@ -9,6 +9,46 @@ export class ProductList{
     {"name":"SALT","imgUrl":"./assets/images.jpg","desc":"SALT work in the best way of reducing the pain and inflammation.","composition":"Aceclofenac 100 mg + Paracetamol 325 mg","packing":"10X10 TABLET ALU ALU & High grade Packaging","dose":"As prescribed by the physician","type":"antifungal"},
     {"name":"SALT","imgUrl":"./assets/images.jpg","desc":"SALT work in the best way of reducing the pain and inflammation.","composition":"Aceclofenac 100 mg + Paracetamol 325 mg","packing":"10X10 TABLET ALU ALU & High grade Packaging","dose":"As prescribed by the physician","type":"antifungal"}];
 
+    Antihistamine:any = [];
+
+    AntiFungal:any = [];
+    AntiMalarial:any = [];
+    IronCalcium:any = [];
+
+    MultiVitamins:any = [
+        {"name":"LYCOSALT FORTE","imgUrl":"./assets/Antioxidant.jpg","desc":"SALT work in the best way of reducing the pain and inflammation.","composition":"Lycopene 10%- 6000 mcg, Vit A-2500IU,Vit E-10 IU, Vit C-50 mg, Selenium - 35 mcg, Zinc-3 mg, Manganese-2 mg, Potassium Iodine, Copper-500 mcg, thiamine Hcl- 2mg, Riboflavin-3 mg, & Pyridoxine Hcl- 1.5 mg","packing":"10 * 10  CAPSULE ALU ALU & High grade Packaging","dose":"As prescribed by the physician","type":"MultiVitamins"}
+    ];
+
+    Antibacterial:any = [
+        {"name":"SALTOMYCIN-500","imgUrl":"./assets/Antibiotic_2.jpg","desc":"SALT work in the best way of reducing the pain and inflammation.","composition":"Azithromycin 500 mg","packing":"10 * 3 TABLET BLISTER & High grade Packaging.","dose":"As prescribed by the physician","type":"Antibacterial"},
+        {"name":"SALTOCEF-OF","imgUrl":"./assets/Antibiotic.jpg","desc":"SALT work in the best way of reducing the pain and inflammation.","composition":"Cefixim 200 mg + Ofloxacin 200 mg","packing":"10 * 3 TABLET BLISTER & High grade Packaging","dose":"As prescribed by the physician","type":"Antibacterial"}
+    ];
+
+    Analgesic:any = [
+        {"name":"SALTAMOL-SP","imgUrl":"./assets/Analgesic.jpg","desc":"SALT work in the best way of reducing the pain and inflammation.","composition":"Aceclofenac 100 mg + Paracetamol 325 mg + Serratiopeptidase 15 mg","packing":"10 * 10 TABLET ALU ALU & High grade Packaging.","dose":"As prescribed by the physician","type":"Analgesic"}
+    ];
+
+    Antiemetic:any = [];
+
+    Antiviral:any = [];
+
+    Diabetes:any = [];
+
+    ProtonPumpInhibitor:any = [
+        {"name":"SALTAZOLE-DSR","imgUrl":"./assets/ProtonPumpInhibitor.jpg","desc":"SALT work in the best way of reducing the pain and inflammation.","composition":"Rabeprazole 20 mg + Domperidone 30 mg","packing":"10 * 10 CAPSULE ALU ALU & High grade Packaging.","dose":"As prescribed by the physician","type":"ProtonPumpInhibitor"}
+    ];
+
+    Antipyretic:any = [
+        {"name":"SALTAMOL-SP","imgUrl":"./assets/Antipyretic.jpg","desc":"SALT work in the best way of reducing the pain and inflammation.","composition":"Aceclofenac 100 mg + Paracetamol 325 mg","packing":"10X10 TABLET ALU ALU & High grade Packaging","dose":"As prescribed by the physician","type":"Antipyretic"}
+    ];
+
+    Antioxidant:any = [
+        {"name":"LYCOSALT FORTE","imgUrl":"./assets/Antioxidant.jpg","desc":"SALT work in the best way of reducing the pain and inflammation.","composition":"Lycopene 10%- 6000 mcg, Vit A-2500IU,Vit E-10 IU, Vit C-50 mg, Selenium - 35 mcg, Zinc-3 mg, Manganese-2 mg, Potassium Iodine, Copper-500 mcg, thiamine Hcl- 2mg, Riboflavin-3 mg, & Pyridoxine Hcl- 1.5 mg","packing":"10 * 10  CAPSULE ALU ALU & High grade Packaging","dose":"As prescribed by the physician","type":"Antioxidant"}
+    ];
+    Antiinflammatory:any = [
+        {"name":"SALT","imgUrl":"./assets/Antiinflammatory.jpg","desc":"SALT work in the best way of reducing the pain and inflammation.","composition":"Aceclofenac 100 mg + Paracetamol 325 mg","packing":"10X10 TABLET ALU ALU & High grade Packaging","dose":"As prescribed by the physician","type":"Antiinflammatory"}
+    ];
+
     exportList:any = [{"sq":"	1	","name":"	NIMESULIDE….100MG, PARACETAMOL…325MG	","category":"tablets"},
     {"sq":"	2	","name":"	NIMSEULIDE….100MG, TIZANIDINE...2MG	","category":"tablets"},
     {"sq":"	3	","name":"	NIMESULIDE...100MG, SERRATIOPEPTIDASE...10MG	","category":"tablets"},

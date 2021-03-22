@@ -23,7 +23,7 @@
             <mat-card class="example-card m-4">
                 <mat-card-header>
                   <mat-card-title>{{data.name}}</mat-card-title>
-                  <mat-card-subtitle>Antihistamine</mat-card-subtitle>
+                  <mat-card-subtitle>Analgestic</mat-card-subtitle>
                 </mat-card-header>
                 <img mat-card-image [src]="data.imgUrl" alt="Photo of a Shiba Inu">
                 <mat-card-content>
@@ -36,6 +36,7 @@
                 </mat-card-actions>
               </mat-card>
         </div>
+        <div *ngIf="dispArr.length == 0 " style="margin: auto;color:#ff9b00;">WE WILL COME SOON....</div>
           
     </div>
     </div>

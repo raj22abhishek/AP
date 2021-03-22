@@ -15,8 +15,7 @@ export class AntihistamineComponent implements OnInit {
   constructor(private service:MainServiceService,public dialog: MatDialog,private prodList:ProductList) { }
 
   ngOnInit(): void {
-    this.dispArr = this.prodList.data;
-    console.log(this.prodList.data)
+    this.dispArr = this.prodList.Antihistamine;
   }
   openDialog(data) {
     const dialogRef = this.dialog.open(PopupComponent,{

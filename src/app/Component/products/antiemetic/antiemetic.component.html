@@ -3,7 +3,7 @@
 <div class="container-fluid">
     <div class="row mt-4 mb-4"
     style="background-color: #ff9b00;min-height: 100px;color: white;display: block;">
-        <h1 style="text-align: center;font-size: 50px;padding-top: 32px;">ANTIEMETIC</h1>
+        <h1 style="text-align: center;font-size: 50px;padding-top: 32px;">ANTIINFLAMMATORY</h1>
     </div>
 </div>
 
@@ -23,7 +23,7 @@
             <mat-card class="example-card m-4">
                 <mat-card-header>
                   <mat-card-title>{{data.name}}</mat-card-title>
-                  <mat-card-subtitle>Antihistamine</mat-card-subtitle>
+                  <mat-card-subtitle>Antiinflammatory</mat-card-subtitle>
                 </mat-card-header>
                 <img mat-card-image [src]="data.imgUrl" alt="Photo of a Shiba Inu">
                 <mat-card-content>
@@ -36,6 +36,6 @@
                 </mat-card-actions>
               </mat-card>
         </div>
-          
+        <div *ngIf="dispArr.length == 0 " style="margin: auto;color:#ff9b00;">WE WILL COME SOON....</div>
     </div>
     </div>
