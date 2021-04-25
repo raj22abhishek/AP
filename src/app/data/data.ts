@@ -39,7 +39,7 @@ export class ProductList{
     ];
 
     Antipyretic:any = [
-        {"name":"SALTAMOL-SP","imgUrl":"./assets/Antipyretic.jpg","desc":"SALTAMOL-SP reduces the fever and all kind of body pain.","composition":"Aceclofenac 100 mg + Paracetamol 325 mg","packing":"10X10 TABLET ALU ALU & High grade Packaging","dose":"As prescribed by the physician","type":"Antipyretic"}
+        {"name":"SALTAMOL-SP","imgUrl":"./assets/Antipyretic.jpg","desc":"SALTAMOL-SP reduces the fever and all kind of body pain.","composition":"Aceclofenac 100 mg + Paracetamol 325 mg + Serratiopeptidase 15 mg","packing":"10X10 TABLET ALU ALU & High grade Packaging","dose":"As prescribed by the physician","type":"Antipyretic"}
     ];
 
     Antioxidant:any = [
