@@ -35,10 +35,10 @@ export class CareerComponent implements OnInit {
     // ).finally(() => {
     //   this.submitting = false;
     // });
-    setTimeout(() => {
-      alert("Form Submitted Successfully")
-      this.ourForm.reset()
-    },6000)
+    // setTimeout(() => {
+    //   alert("Form Submitted Successfully")
+    //   this.ourForm.reset()
+    // },6000)
     // alert("Form Submitted Successfully")
     // this.ourForm.reset()
     
