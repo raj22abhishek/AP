@@ -27,9 +27,9 @@
 </script>
 
 <script type="text/javascript">
-  window.onload = function() {
+  contactForm = function() {
       var ell = document.getElementById('contact-form')
-      console.log(ell,"start")
+      console.log(ell,"start contact")
       if(ell) {
         addEventListener('submit', function(ell) {
           ell.preventDefault();
@@ -46,9 +46,9 @@
       }
   }
 
-  window.onload = function() {
+  careerForm = function() {
       var el = document.getElementById('career-form')
-      console.log(el,"start")
+      console.log(el,"start career")
       if(el){
         addEventListener('submit', function(el) {
           el.preventDefault();
