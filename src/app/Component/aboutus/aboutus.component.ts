@@ -26,15 +26,19 @@ export class AboutusComponent implements OnInit {
   }
   submitData(value: any) {
     console.log(this.ourForm,value);
-    this.submitting = true;
-    this.submissionForm.add(value).then(res => {
-      this.submitted = true;
-    }).catch(err => console.log(err)
-    ).finally(() => {
-      this.submitting = false;
-    });
-    alert("Form Submitted Successfully")
-    this.ourForm.reset()
+    // this.submitting = true;
+    // this.submissionForm.add(value).then(res => {
+    //   this.submitted = true;
+    // }).catch(err => console.log(err)
+    // ).finally(() => {
+    //   this.submitting = false;
+    // });
+    setTimeout(() => {
+      alert("Form Submitted Successfully")
+      this.ourForm.reset()
+    },3000)
+    // alert("Form Submitted Successfully")
+    // this.ourForm.reset()
     
   }
 

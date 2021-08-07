@@ -52,14 +52,14 @@
 .contact-info h2{
     margin-bottom: 10%;
 }
-.contact-form label{
+.contact-form1 label{
     font-weight:600;
 }
-.contact-form button{
+.contact-form1 button{
     color: #fff;
     font-weight: 600;
     width: 25%;
 }
-.contact-form button:focus{
+.contact-form1 button:focus{
     box-shadow:none;
 }

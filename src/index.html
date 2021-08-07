@@ -17,5 +17,48 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_I2nPFtDukMJxKYJU3WrJe");
+   })();
+</script>
+
+<script type="text/javascript">
+  window.onload = function() {
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          // generate a five digit number for the contact_number variable
+          // this.contact_number.value = Math.random() * 100000 | 0;
+          // these IDs from the previous steps
+          emailjs.sendForm('service_j76bbda', 'template_fuck2j5', this)
+              .then(function() {
+                  console.log('SUCCESS!');
+              }, function(error) {
+                  console.log('FAILED...', error);
+              });
+      });
+  }
+</script>
+
+<script type="text/javascript">
+  window.onload = function() {
+      document.getElementById('career-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          // generate a five digit number for the contact_number variable
+          // this.contact_number.value = Math.random() * 100000 | 0;
+          // these IDs from the previous steps
+          emailjs.sendForm('service_j76bbda', 'template_r5vsp2s', this)
+              .then(function() {
+                  console.log('SUCCESS!');
+              }, function(error) {
+                  console.log('FAILED...', error);
+              });
+      }); 
+  }
+</script>
+
 </body>
 </html> 
