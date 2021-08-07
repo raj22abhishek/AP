@@ -28,11 +28,10 @@
 
 <script type="text/javascript">
   contactForm = function() {
-      var ell = document.getElementById('contact-form')
-      console.log(ell,"start contact")
-      if(ell) {
-        addEventListener('submit', function(ell) {
-          ell.preventDefault();
+    console.log(ell,"start contact")
+      var ell = document.getElementById('contact-form').
+        addEventListener('submit', function(event) {
+          event.preventDefault();
           // generate a five digit number for the contact_number variable
           // this.contact_number.value = Math.random() * 100000 | 0;
           // these IDs from the previous steps
@@ -43,15 +42,14 @@
                   console.log('FAILED...', error);
               });
       });
-      }
+      
   }
 
   careerForm = function() {
-      var el = document.getElementById('career-form')
-      console.log(el,"start career")
-      if(el){
-        addEventListener('submit', function(el) {
-          el.preventDefault();
+    console.log("start career")
+      document.getElementById('career-form').
+        addEventListener('submit', function(event) {
+          event.preventDefault();
           // generate a five digit number for the contact_number variable
           // this.contact_number.value = Math.random() * 100000 | 0;
           // these IDs from the previous steps
@@ -62,7 +60,6 @@
                   console.log('FAILED...', error);
               });
       }); 
-      }
   }
 </script>
 

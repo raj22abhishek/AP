@@ -126,9 +126,10 @@
 
                     <!-- Submit Button -->
                     <div class="form-group col-lg-12 mx-auto mb-0">
-                        <button [disabled]="ourForm.invalid" type="submit"  class="btn btn-primary btn-block py-2" (click)="submitData(ourForm.value)">
+                        <!-- <button [disabled]="ourForm.invalid" type="submit"  class="btn btn-primary btn-block py-2" (click)="submitData(ourForm.value)">
                             <span class="font-weight-bold">Submit</span>
-                        </button>
+                        </button> -->
+                        <input [disabled]="ourForm.invalid" value="Submit" type="submit"  class="btn btn-primary btn-block py-2" (click)="submitData(ourForm.value)">
                     </div>
 
                     
