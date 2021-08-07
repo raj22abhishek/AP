@@ -36,7 +36,7 @@ export class AboutusComponent implements OnInit {
     setTimeout(() => {
       alert("Form Submitted Successfully")
       this.ourForm.reset()
-    },3000)
+    },6000)
     // alert("Form Submitted Successfully")
     // this.ourForm.reset()
     
